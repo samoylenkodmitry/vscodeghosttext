@@ -2,7 +2,7 @@
   "name": "vscodeghosttext",
 	"displayName": "vscodeghosttext",
 	"description": "Simple ghostText extension that autostarts and can change edit file extension",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "samoylenkodmitry",
 	"repository": {
 		"url": "https://github.com/samoylenkodmitry/vscodeghosttext"

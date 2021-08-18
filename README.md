@@ -26,6 +26,10 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 0.0.2
+
+Changed activation event from `*` to `onStartupFinished`.
+
 ### 0.0.1
 
 Initial release.
