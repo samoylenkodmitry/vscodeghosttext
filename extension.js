@@ -1,6 +1,6 @@
 var vscode = require('vscode');
 var { Range, Position } = vscode;
-var { workspace, window, commands } = vscode;
+var { workspace, window } = vscode;
 var http = require('http');
 var ws = require('nodejs-websocket');
 var tmp = require('tmp');
@@ -92,7 +92,7 @@ class OnMessage {
 
 var httpStatusServer = null;
 
-var activate = (context) => {
+var activate = () => {
   var fileSuffix=vscode.workspace.getConfiguration().get('tmpFileSuffix');
 
 	window.showInformationMessage('Ghost text has been enabled! Default suffix: '+fileSuffix+'. You can change this in settings.');
