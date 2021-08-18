@@ -1,59 +1,62 @@
 {
   "name": "vscodeghosttext",
-	"displayName": "vscodeghosttext",
-	"description": "Simple ghostText extension that autostarts and can change edit file extension",
-	"version": "0.0.3",
-	"publisher": "samoylenkodmitry",
-	"repository": {
-		"url": "https://github.com/samoylenkodmitry/vscodeghosttext"
-	},
-	"engines": {
-		"vscode": "^1.59.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-        "onStartupFinished"
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"configuration":[
-			{
-				"title": "vscodeghosttext",
-				"properties": {
-					"tmpFileSuffix":{
-						"type":"string",
-						"default":".java",
-						"description": "Suffix for a temporary filename. Default: '.java'",
-						"scope": "window"
-					}
-				}
-			}
-		]
-	},
-	"scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "node ./test/runTest.js"
-	},
-	"devDependencies": {
-        "@types/vscode": "^1.59.0",
-        "@types/glob": "^7.1.3",
-        "@types/mocha": "^8.2.2",
-        "@types/node": "14.x",
-        "eslint": "^7.27.0",
-        "glob": "^7.1.7",
-        "mocha": "^8.4.0",
-        "typescript": "^4.3.2",
-        "vscode-test": "^1.5.2",
-		"nodejs-websocket":"^1.7.2",
-		"tmp":"^0.2.1"
-    },
-	"dependencies": {
-		"nodejs-websocket":"^1.7.2",
-		"tmp":"^0.2.1"
-	}
+  "displayName": "vscodeghosttext",
+  "description": "Simple ghostText extension that autostarts and can change edit file extension",
+  "version": "0.0.8",
+  "publisher": "samoylenkodmitry",
+  "repository": {
+    "url": "https://github.com/samoylenkodmitry/vscodeghosttext"
+  },
+  "engines": {
+    "vscode": "^1.59.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": [
+      {
+        "title": "vscodeghosttext",
+        "properties": {
+          "tmpFileSuffix": {
+            "type": "string",
+            "default": ".java",
+            "description": "Suffix for a temporary filename. Default: '.java'",
+            "scope": "window"
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js",
+    "esbuild-base": "esbuild ./extension.js --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
+    "esbuild": "npm run esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
+    "vscode:prepublish": "npm run esbuild-base -- --minify",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.59.0",
+    "esbuild": "^0.12.20",
+    "eslint": "^7.27.0",
+    "glob": "^7.1.7",
+    "mocha": "^8.4.0",
+    "typescript": "^4.3.2",
+    "vscode-test": "^1.5.2"
+  },
+  "dependencies": {
+    "tmp": "^0.2.1",
+    "nodejs-websocket": "^1.7.2"
+  }
 
 }
