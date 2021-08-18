@@ -4,6 +4,9 @@
 	"description": "Simple ghostText extension that autostarts and can change edit file extension",
 	"version": "0.0.1",
 	"publisher": "samoylenkodmitry",
+	"repository": {
+		"url": "https://github.com/samoylenkodmitry/vscodeghosttext"
+	},
 	"engines": {
 		"vscode": "^1.59.0"
 	},
