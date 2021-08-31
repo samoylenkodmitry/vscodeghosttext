@@ -3,6 +3,8 @@
 
 ![ghost_vscode_demo](https://user-images.githubusercontent.com/2128250/130036929-09cc73fb-d781-44e6-a18a-fdd959be9e7f.gif)
 
+https://marketplace.visualstudio.com/items?itemName=samoylenkodmitry.vscodeghosttext
+
 This is an extension for Visual Studio Code https://code.visualstudio.com/.
 
 It also requires [GhostText](https://ghosttext.fregante.com/) plugin installed in your browser.
@@ -33,6 +35,12 @@ Chrome: https://chrome.google.com/webstore/detail/ghosttext/godiecgffnchndlihlpa
 This extension contributes the following settings:
 
 * `tmpFileSuffix`: suffix for temp file
+
+## Installation
+Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter.
+```
+ext install samoylenkodmitry.vscodeghosttext
+```
 
 # If it not working
 Please check that `node` command can be run on your system from terminal. If not install `nodejs`.
