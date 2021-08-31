@@ -9,8 +9,9 @@ This is an extension for Visual Studio Code https://code.visualstudio.com/.
 
 It also requires [GhostText](https://ghosttext.fregante.com/) plugin installed in your browser.
 But default GhostText extension for VSCode is limited and require extra steps to turn on.
-Firefox: https://addons.mozilla.org/en-US/firefox/addon/ghosttext/
-Chrome: https://chrome.google.com/webstore/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca
+
+* Firefox: https://addons.mozilla.org/en-US/firefox/addon/ghosttext/
+* Chrome: https://chrome.google.com/webstore/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca
 
 ## Features
 
