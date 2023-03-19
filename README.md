@@ -1,3 +1,8 @@
+# This is not official extension
+There is an official one, it can be supported and maintained better: 
+    https://github.com/fregante/GhostText-for-VSCode
+    https://marketplace.visualstudio.com/items?itemName=fregante.ghost-text
+
 
 # vscodeghosttext GhostText extension
 
