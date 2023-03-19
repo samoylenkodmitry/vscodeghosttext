@@ -49,19 +49,3 @@ Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter
 ext install samoylenkodmitry.vscodeghosttext
 ```
 
-# If it not working
-Please check that `node` command can be run on your system from terminal. If not install `nodejs`.
-
-## Release Notes
-
-### 0.0.3
-
-Postinstall script.
-
-### 0.0.2
-
-Changed activation event from `*` to `onStartupFinished`.
-
-### 0.0.1
-
-Initial release.
